@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <style>
+      p { margin:20px 0px; }
+
+    body{
+
+      background-color:lightgray;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: 100% 100%;
+    }
+    </style>
+
+  </head>
+  <body>
+    <nav class="navbar" style="background-color: #e3f2fd;">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="https://www.hallym.ac.kr/.resources/hallym_univ_theme/hallym/ko/img/abouthallym/symbol-ui-mark.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+          한림 굿헬스
+        </a>
+      </div>
+    </nav>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/">홈</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="/lesson">레슨</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  실내운동
+                </a> 
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="/health">헬스</a></li>
+                  <li><a class="dropdown-item" href="/swim">수영</a></li>
+                  <li><a class="dropdown-item" href="/bowling">볼링</a></li>
+                  <li><a class="dropdown-item" href="/skate">스케이트</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  실외운동
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="/soccer">축구</a></li>
+                  <li><a class="dropdown-item" href="/tennis">테니스</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/review">리뷰</a>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="container">
+      <div class="card border-dark w-100">
+        <img src="https://w.namu.la/s/8677734478528d0daa4420c55a0dd9342dda2cdd23869712ff0ea71b9f3ada7d7456c9471ace290dc2fa7352ab9d838c71f3cfd3da468717626a7b29dcee939e9c6e3df0483add6e4f9630479272c8179c9d4223b4b47da0e657056677dd8297" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text fs-4">한림대학교 근처 스포츠센터에 대해서 소개하는 사이트입니다.</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-4">
+          <div class="card">
+            <div class="card-body">
+              <img src="https://img.freepik.com/premium-vector/teacher-at-the-blank-whiteboard-icon-education-concept-lesson-in-the-class-sign-on-white-background-vector-illustration_136875-2904.jpg?w=2000" class="card-img-top" alt="...">
+              <h5 class="card-title">레슨</h5>
+              <a href="/lesson" class="btn btn-primary">레슨으로 이동</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="card">
+            <div class="card-body">
+              <img src="https://www.ikea.com/images/-3bed052c18a13094e355d46725f4f591.jpg?f=s" class="card-img-top" alt="...">
+              <h5 class="card-title">리뷰</h5>
+              <a href="/review" class="btn btn-primary">리뷰로 이동</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  </body>
+</html>

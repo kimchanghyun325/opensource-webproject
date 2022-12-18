@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <style>
+      p { margin:20px 0px; }
+
+    body{
+
+      background-color:lightgray;
+
+    }
+    </style>
+  </head>
+  <body>        
+    <nav class="navbar" style="background-color: #e3f2fd;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="https://www.hallym.ac.kr/.resources/hallym_univ_theme/hallym/ko/img/abouthallym/symbol-ui-mark.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+        한림 굿헬스
+      </a>
+    </div>
+  </nav>
+  <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/">홈</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="/lesson">레슨</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                실내운동
+              </a> 
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="/health">헬스</a></li>
+                <li><a class="dropdown-item" href="/swim">수영</a></li>
+                <li><a class="dropdown-item" href="/bowling">볼링</a></li>
+                <li><a class="dropdown-item" href="/skate">스케이트</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                실외운동
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="/soccer">축구</a></li>
+                <li><a class="dropdown-item" href="/tennis">테니스</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/review">리뷰</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+    <div class="row">
+      <div class="col-4">
+        <div class="card border-dark">
+          <div class="card-body">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBTtBhnvIsR5MIG3NOqXuqpVxcPXNIASELPwY8icPaBQ&s" class="card-img-top" alt="...">
+            <a href="/write" class="btn btn-primary">글쓰기</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="card border-dark">
+          <div class="card-body">
+            <img src="data:image/png;base64,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" class="card-img-top" alt="...">
+            <a href="/list" class="btn btn-primary">리뷰보기</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+  </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  </body>
+</html>
